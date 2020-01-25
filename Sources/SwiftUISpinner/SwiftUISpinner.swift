@@ -6,6 +6,10 @@ public struct SwiftUISpinner: UIViewRepresentable {
   
   public var animating: Bool
   
+  public init(animating: Bool) {
+    self.animating = animating
+  }
+  
   public func makeUIView(context: Context) -> UIActivityIndicatorView {
     UIActivityIndicatorView(frame: CGRect(x: 0, y: 0, width: 64, height: 64))
   }
